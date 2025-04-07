@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>authorization</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+         <form class="form" method="get" action="/auth">
+            <h1>Авторизация</h1>
+            <div class="input-box">
+                <input
+                id="login"
+                name="login"
+                class = "form_input"
+                type="text"
+                placeholder="Username">
+                <div class="login-error"></div>
+            </div>
+            <div class="input-box">
+                <input
+                id="password"
+                name="password"
+                class="form_input"
+                type="password"
+                placeholder="password">
+                <div class="pasword-error"></div>
+            </div>
+            <button type="submit" class="btn">Войти</button>
+            <div>
+                <script 
+                async 
+                src="https://telegram.org/js/telegram-widget.js?22" 
+                data-telegram-login="surgu_web_bot" 
+                data-size="large" 
+                data-auth-url="http://test.ru/telegram" 
+                data-request-access="write"
+                ></script>
+            </div>
+         </form>
+
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>
